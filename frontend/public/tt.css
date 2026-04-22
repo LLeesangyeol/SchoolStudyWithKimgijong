@@ -1,0 +1,115 @@
+/* 기본 폰트 및 배경 설정 */
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        /* 메인 컨테이너 */
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* 폼 카드 스타일 */
+        .form-card {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        /* 제목 스타일 */
+        h2 {
+            font-size: 1.75rem;
+            color: #1a73e8;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        /* 입력창(Input) 스타일 */
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #1a73e8;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.1);
+        }
+
+        /* 버튼(Button) 스타일 */
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 8px;
+        }
+
+        button:hover {
+            background-color: #1557b0;
+            box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* 전환 링크 스타일 */
+        .toggle-link {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .toggle-link span {
+            color: #1a73e8;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: underline;
+            margin-left: 5px;
+        }
+
+        /* 섹션 숨기기 클래스 */
+        .hidden {
+            display: none;
+        }
+
+        /* 상단 프로젝트 이름 */
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #5f6368;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
