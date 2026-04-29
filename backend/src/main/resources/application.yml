@@ -1,7 +1,6 @@
 spring:
   profiles:
-    active: local # 기본값
-  # [공통 설정] 모든 프로필에서 공통으로 사용하는 정보
+    active: local
   datasource:
     username: root
     password: "1234"
@@ -15,7 +14,6 @@ spring:
         format_sql: true
 
 ---
-# 1. 로컬 실행용 (IntelliJ)
 spring:
   config:
     activate:
@@ -24,7 +22,6 @@ spring:
     url: jdbc:mariadb://localhost:3316/user_db
 
 ---
-# 2. 도커 배포용
 spring:
   config:
     activate:
